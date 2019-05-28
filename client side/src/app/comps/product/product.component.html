@@ -1,0 +1,15 @@
+<div class="card row-app-product" style="width: 10rem;">
+
+  <div class="img"> <img [src]="product.image" alt="..."></div>
+
+  <div class="product">{{product.productName}}</div>
+
+  <div class="product">Price: {{fixPrice}}$</div>
+
+  <div class="product">
+
+    <button type="button" (click)="openAddModal()" class="btn-add btn btn-light" data-toggle="modal" data-target="#app-product-modal"></button>
+       
+  </div>
+
+</div>

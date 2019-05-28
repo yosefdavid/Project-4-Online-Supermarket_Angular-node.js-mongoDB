@@ -1,0 +1,609 @@
+body {
+  margin-top: 30px;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+body ::-webkit-scrollbar {
+  width: 11px;
+}
+
+body ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+          box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+body ::-webkit-scrollbar-thumb {
+  background: #ac3838;
+  border-radius: 10px;
+}
+
+body ::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+body .container-fluid .app-logo-hello .logo {
+  width: 220px;
+}
+
+body .container-fluid .app-logo-hello .clientName {
+  text-align: center;
+  margin: 20px;
+}
+
+body .container-fluid .app-logo-hello .clientName .admin-msg {
+  margin-top: 10px;
+}
+
+body .container-fluid .app-logo-hello .clientName button {
+  margin: 15px;
+}
+
+body .container-fluid .app-login-and-registration {
+  margin-top: 50px;
+  text-align: center;
+}
+
+body .container-fluid .app-login-and-registration .row {
+  margin-top: 15px;
+}
+
+body .container-fluid .app-login-and-registration .row-app-login-registration img {
+  width: 150px;
+  border-radius: 15px;
+}
+
+body .container-fluid .app-login-and-registration .row-app-login-registration a {
+  text-decoration: none;
+}
+
+body .container-fluid .app-login-and-registration .row-app-login-registration .msg {
+  color: #970a0a;
+  font-weight: bold;
+}
+
+body .container-fluid .app-login-and-registration .row-app-login-registration .login-btn {
+  margin: 15px;
+}
+
+body .container-fluid .app-login-and-registration .row-app-login-registration .login-msg {
+  margin: 15px;
+}
+
+body .container-fluid .app-login-and-registration .row-app-about-store {
+  max-height: 415px;
+  overflow: auto;
+}
+
+body .container-fluid .app-login-and-registration .row-app-about-store img {
+  width: 150px;
+}
+
+body .container-fluid .app-login-and-registration .row-app-store-information img {
+  width: 150px;
+}
+
+body .container-fluid .app-login-and-registration .row-app-store-information .notification {
+  color: yellowgreen;
+  font-weight: bold;
+}
+
+body .container-fluid .app-login-and-registration .row-app-store-information .cart-msg {
+  margin-top: 10px;
+}
+
+body .container-fluid .row-app-register {
+  text-align: center;
+}
+
+body .container-fluid .row-app-register h2 {
+  margin-top: 20px;
+}
+
+body .container-fluid .row-app-register .row-steps {
+  display: inline-block;
+  margin: 30px;
+}
+
+body .container-fluid .row-app-register .row-steps select {
+  height: 30px;
+}
+
+body .container-fluid .row-app-register .row-steps table {
+  margin: 20px;
+}
+
+body .container-fluid .row-app-register .row-steps table button {
+  margin: 20px;
+}
+
+body .container-fluid .row-app-register .row-steps table td {
+  padding: 15px;
+}
+
+body .container-fluid .row-app-register .row-steps table .msg {
+  color: #970a0a;
+  font-weight: bold;
+}
+
+body .container-fluid .row-app-copyright {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+body .container-fluid .row-app-copyright a {
+  text-decoration: none;
+}
+
+body .container-fluid .row-app-user {
+  margin-top: 30px;
+}
+
+body .container-fluid .row-app-user .row-app-search .btn-search {
+  border: none;
+  width: 30px;
+  height: 30px;
+  background-image: url("https://freeiconshop.com/wp-content/uploads/edd/search-flat.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+  position: relative;
+  top: 8px;
+}
+
+body .container-fluid .row-app-user .mini-cart {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+body .container-fluid .row-app-user .mini-cart .btn-full-mode {
+  border: none;
+  width: 40px;
+  height: 40px;
+  background-image: url("http://jumbosim.com/sim/css/img/cart.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  background-color: white;
+}
+
+body .container-fluid .row-app-user .cart {
+  margin-right: auto;
+  text-align: center;
+  margin-left: auto;
+}
+
+body .container-fluid .row-app-user .col-all-products {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+body .container-fluid .row-app-user .row-app-cart {
+  margin-top: 30px;
+  margin-left: 10px;
+  max-height: 600px;
+  overflow: auto;
+}
+
+body .container-fluid .row-app-user .row-app-cart .col-cart {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+body .container-fluid .row-app-user .row-app-cart .col-cart .mini-bth {
+  border: none;
+  width: 40px;
+  height: 40px;
+  background-image: url("https://cdn0.iconfinder.com/data/icons/business-finance-vol-14-2/512/20-512.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  background-color: white;
+}
+
+body .container-fluid .row-app-user .row-app-cart .col-cart .empty-bth {
+  border: none;
+  width: 40px;
+  height: 40px;
+  background-image: url("https://m.aapsworld.com/img/empty-cart-icon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  background-color: white;
+}
+
+body .container-fluid .row-app-user .row-app-cart .col-cart .price {
+  margin-top: 5px;
+}
+
+body .container-fluid .row-app-user .row-app-cart .col-cart .order-btn {
+  font-weight: 600;
+}
+
+body .container-fluid .row-app-user .row-app-cart .row-app-product-cart .remove-product {
+  border: none;
+  width: 40px;
+  height: 40px;
+  background-image: url("https://t3.ftcdn.net/jpg/02/44/07/92/240_F_244079250_A2k049tJhPBwqlBWVZNxqasuMw95jtak.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+body .container-fluid .row-app-user .row-app-cart .row-app-product-cart .card-img {
+  margin-top: 28px;
+  width: 63%;
+  max-height: 140px;
+}
+
+body .container-fluid .row-app-user .row-app-cart img {
+  margin-top: 28px;
+}
+
+body .container-fluid .row-app-all-products {
+  margin-top: 30px;
+  margin-left: 10px;
+  height: 600px;
+  overflow: auto;
+}
+
+body .container-fluid .row-app-all-products .row-categories {
+  margin-top: 10px;
+}
+
+body .container-fluid .row-app-all-products .row-categories .spinner-border {
+  margin-left: 15px;
+  margin-bottom: 3px;
+}
+
+body .container-fluid .row-app-all-products #app-product-modal {
+  text-align: center;
+  margin-top: 180px;
+}
+
+body .container-fluid .row-app-all-products #app-product-modal img {
+  width: 25%;
+  max-height: 86px;
+}
+
+body .container-fluid .row-app-all-products #app-product-modal .modal-dialog {
+  width: 225px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body .container-fluid .row-app-all-products #app-product-modal .modal-dialog .total-product {
+  text-align: center;
+  width: 70px;
+}
+
+body .container-fluid .row-app-all-products #app-product-modal .modal-dialog .modal-div {
+  margin-top: 10px;
+}
+
+body .container-fluid .row-app-all-products #app-product-modal .modal-dialog .btn-add-modal {
+  border: none;
+  width: 40px;
+  height: 40px;
+  background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX31227219.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body .container-fluid .row-app-all-products .row-app-product {
+  text-align: center;
+  float: left;
+  margin: 15px;
+  padding: 10px;
+  height: 262px;
+  padding: 10px;
+}
+
+body .container-fluid .row-app-all-products .row-app-product .img {
+  height: 140px;
+}
+
+body .container-fluid .row-app-all-products .row-app-product img {
+  max-width: 100%;
+  max-height: 125px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+body .container-fluid .row-app-all-products .row-app-product .product {
+  margin-top: 10px;
+}
+
+body .container-fluid .row-app-all-products .row-app-product .btn-add {
+  border: none;
+  width: 40px;
+  height: 40px;
+  background-image: url("https://png.pngtree.com/svg/20170901/34af96269c.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+body .container-fluid .row-app-order {
+  margin-top: 30px;
+}
+
+body .container-fluid .row-app-order .row-app-search-invoice .btn-search {
+  border: none;
+  width: 30px;
+  height: 30px;
+  background-image: url("https://freeiconshop.com/wp-content/uploads/edd/search-flat.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+  position: relative;
+  top: 8px;
+}
+
+body .container-fluid .row-app-order .row-app-search-invoice .row-result {
+  margin-top: 10px;
+}
+
+body .container-fluid .row-app-order .cart-invoice {
+  margin-right: auto;
+  text-align: center;
+  margin-left: auto;
+}
+
+body .container-fluid .row-app-order .row-app-cart-invoice {
+  margin-top: 30px;
+  margin-left: 10px;
+  max-height: 600px;
+  overflow: auto;
+}
+
+body .container-fluid .row-app-order .row-app-cart-invoice .col-app-cart-invoice {
+  padding: 15px;
+}
+
+body .container-fluid .row-app-order .row-app-cart-invoice .col-app-cart-invoice .row-btn-back {
+  margin-bottom: 17px;
+}
+
+body .container-fluid .row-app-order .row-app-cart-invoice .col-app-cart-invoice .btn-info {
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+body .container-fluid .row-app-order .row-app-cart-invoice .row-app-product-invoice .result {
+  background-color: yellow;
+}
+
+body .container-fluid .row-app-order .row-app-cart-invoice .row-price {
+  margin-top: 10px;
+}
+
+body .container-fluid .row-app-order .col-order-form {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+body .container-fluid .row-app-order .col-order-form .row-app-order-form {
+  margin-top: 30px;
+  margin-left: 10px;
+  height: 600px;
+  overflow: auto;
+}
+
+body .container-fluid .row-app-order .col-order-form .row-app-order-form .col-order {
+  padding: 19px;
+  /* Modal Content */
+  /* The Close Button */
+}
+
+body .container-fluid .row-app-order .col-order-form .row-app-order-form .col-order td {
+  padding: 15px;
+}
+
+body .container-fluid .row-app-order .col-order-form .row-app-order-form .col-order .col-details {
+  margin-left: 55px;
+}
+
+body .container-fluid .row-app-order .col-order-form .row-app-order-form .col-order .col-details .inp-date {
+  width: 178px;
+}
+
+body .container-fluid .row-app-order .col-order-form .row-app-order-form .col-order .col-details .inp-credit {
+  margin-left: 20px;
+}
+
+body .container-fluid .row-app-order .col-order-form .row-app-order-form .col-order .col-details .td-err-date {
+  text-align: center;
+  padding: 0px;
+  color: #b30000;
+  font-weight: bold;
+}
+
+body .container-fluid .row-app-order .col-order-form .row-app-order-form .col-order .col-details .td-err-credit-card {
+  text-align: center;
+  padding: 0px;
+  color: #b30000;
+  font-weight: bold;
+}
+
+body .container-fluid .row-app-order .col-order-form .row-app-order-form .col-order .col-details .msg {
+  margin-top: 10px;
+  color: #b30000;
+  font-weight: bold;
+}
+
+body .container-fluid .row-app-order .col-order-form .row-app-order-form .col-order .col-details .btn-success {
+  font-weight: 600;
+}
+
+body .container-fluid .row-app-order .col-order-form .row-app-order-form .col-order .modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+body .container-fluid .row-app-order .col-order-form .row-app-order-form .col-order .modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 500px;
+  text-align: center;
+  padding: 30px;
+}
+
+body .container-fluid .row-app-order .col-order-form .row-app-order-form .col-order .modal-content div {
+  margin-top: 20px;
+}
+
+body .container-fluid .row-app-order .col-order-form .row-app-order-form .col-order .modal-content img {
+  width: 125px;
+}
+
+body .container-fluid .row-app-order .col-order-form .row-app-order-form .col-order .modal-content .btn-link {
+  padding: 5px;
+  margin-bottom: 4px;
+}
+
+body .container-fluid .row-app-order .col-order-form .row-app-order-form .col-order .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+body .container-fluid .row-app-order .col-order-form .row-app-order-form .col-order .close:hover,
+body .container-fluid .row-app-order .col-order-form .row-app-order-form .col-order .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body .row-app-admin .row-app-search .btn-search {
+  border: none;
+  width: 30px;
+  height: 30px;
+  background-image: url("https://freeiconshop.com/wp-content/uploads/edd/search-flat.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+  position: relative;
+  top: 8px;
+}
+
+body .row-app-admin .cart {
+  margin-right: auto;
+  text-align: center;
+  margin-left: auto;
+}
+
+body .row-app-admin .row-app-cart-admin {
+  margin-top: 30px;
+  margin-left: 10px;
+  max-height: 600px;
+  overflow: auto;
+  width: 300px;
+}
+
+body .row-app-admin .row-app-cart-admin .row-header-cart {
+  margin-top: 20px;
+}
+
+body .row-app-admin .row-app-cart-admin .row-product-cart-admin {
+  margin-bottom: 15px;
+}
+
+body .row-app-admin .row-app-cart-admin .row-app-product-cart-admin {
+  text-align: center;
+  padding: 20px;
+}
+
+body .row-app-admin .row-app-cart-admin .row-app-product-cart-admin img {
+  max-width: 100%;
+  max-height: 125px;
+  margin: 10px;
+}
+
+body .row-app-admin .row-app-cart-admin .row-app-product-cart-admin input {
+  text-align: center;
+}
+
+body .row-app-admin .row-app-cart-admin .row-app-product-cart-admin .product {
+  margin-top: 20px;
+}
+
+body .row-app-admin .row-app-cart-admin .row-app-product-cart-admin .msg {
+  margin-top: 10px;
+  color: #b30000;
+  font-weight: 600;
+}
+
+body .row-app-admin .col-all-products-admin {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+body .row-app-admin .col-all-products-admin .row-app-all-products-admin {
+  margin-top: 30px;
+  margin-left: 10px;
+  height: 600px;
+  overflow: auto;
+}
+
+body .row-app-admin .col-all-products-admin .row-app-all-products-admin .row-categories {
+  margin-top: 24px;
+}
+
+body .row-app-admin .col-all-products-admin .row-app-all-products-admin .row-categories .spinner-border {
+  margin-left: 15px;
+  margin-bottom: 3px;
+}
+
+body .row-app-admin .col-all-products-admin .row-app-all-products-admin .row-app-product {
+  text-align: center;
+  float: left;
+  margin: 15px;
+  padding: 10px;
+  height: 262px;
+  padding: 10px;
+}
+
+body .row-app-admin .col-all-products-admin .row-app-all-products-admin .row-app-product .img {
+  height: 140px;
+}
+
+body .row-app-admin .col-all-products-admin .row-app-all-products-admin .row-app-product img {
+  max-width: 100%;
+  max-height: 125px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+body .row-app-admin .col-all-products-admin .row-app-all-products-admin .row-app-product .product {
+  margin-top: 10px;
+}
+/*# sourceMappingURL=styles.css.map */

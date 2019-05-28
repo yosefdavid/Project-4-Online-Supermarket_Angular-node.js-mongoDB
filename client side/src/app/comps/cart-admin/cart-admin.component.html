@@ -1,0 +1,37 @@
+<div class="card row row-app-cart-admin">
+
+  <div class="col col-cart">
+
+    <div class="row row-header-cart">
+
+      <div class="col">
+
+        {{productName}}
+
+        <div *ngIf="isCartEmpty">Select a product to edit or click + to add a new product</div>
+
+      </div>
+
+      <div class="col">
+
+        <button (click)="addNewProduct()" class="btn btn-primary">+</button>
+
+      </div>
+
+    </div>
+
+    <hr>
+
+    <div class="row row-product-cart-admin">
+
+      <div class="col">
+
+        <app-product-cart-admin *ngFor="let p of productsToEdit" [cartProduct]="p" [allCategories]="allCategories"></app-product-cart-admin>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

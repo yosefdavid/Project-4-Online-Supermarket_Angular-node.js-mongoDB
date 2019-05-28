@@ -1,0 +1,15 @@
+<div class="row app-logo-hello">
+
+  <div class="col">
+
+    <img class="logo" src="https://cdn3.f-cdn.com/contestentries/862147/19868397/57f3dc4bdcf15_thumb900.jpg" />
+
+  </div>
+
+  <div class="col">
+
+    <div class="clientName">Hello {{clientfirstName}} {{clientLastName}}<div *ngIf="isAdmin" class="admin-msg">Administrator</div> <div><button class="btn btn-danger btn-sm" *ngIf="isConect" (click)="logout()">Logout</button></div></div>
+    
+  </div>
+
+</div>

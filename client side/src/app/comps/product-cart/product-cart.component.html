@@ -1,0 +1,21 @@
+<div class="card mb-2 row-app-product-cart" style="max-width: 285px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img [src]="cartProduct.productImg" class="card-img" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{cartProduct.productName}}</h5>
+          <p class="card-text">{{cartProduct.quantity}} {{UnitsOrKg}}</p>
+          <div class="card-text"><small class="text-muted">Total Price: {{fixPrice}}$</small></div>
+          <div>
+            <button class="remove-product" *ngIf="!isRemoveLoad" (click)="removeProductCart()" ></button>
+            <div *ngIf="isRemoveLoad" class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+

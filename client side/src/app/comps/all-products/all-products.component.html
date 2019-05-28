@@ -1,0 +1,75 @@
+<div class="card row row-app-all-products">
+
+  <div class="col">
+
+    <div class="row row-categories">
+
+      <div class="col">
+
+        Categories:
+        <select (change)="getProducts()" [(ngModel)]="categoryToShow">
+
+          <option *ngIf="searchMode" value="result">{{productsToShow.length}} Result</option>
+
+          <option *ngFor="let c of allCategories" [value]="c._id">{{c.categoryName}}</option>
+
+        </select>
+
+        <div *ngIf="isLodaProduct" class="spinner-border spinner-border-sm" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <hr>
+
+    <div class="row">
+
+      <div class="col">
+
+        <!-- Modal -->
+        <div *ngIf="productIdToAdd" class="modal fade" id="app-product-modal" tabindex="-1" role="dialog"
+          aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">{{productNameToAdd}}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+
+                <div class="modal-div">
+                  <img [src]="productImgToAdd" class="img-modal" alt="">
+                </div>
+
+                <div class="modal-div">
+                  <div>Price: {{priceProductToAdd}}$</div>
+                </div>
+
+                <div class="modal-div">
+                  <div>Units:</div>
+                  <div><input class="total-product" type="number" min="1" [(ngModel)]="productQuantityToAdd" /></div>
+                </div>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn-add-modal btn btn-primary" data-dismiss="modal" (click)="addProductModal()"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+
+        <app-product *ngFor="let p of productsToShow" [product]="p"></app-product>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

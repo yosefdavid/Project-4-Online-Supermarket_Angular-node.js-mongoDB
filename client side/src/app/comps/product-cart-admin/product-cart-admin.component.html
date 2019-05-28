@@ -1,0 +1,43 @@
+<div class="card row-app-product-cart-admin" style="width: 16rem;">
+
+  <div class="img"> <img [src]="cartProduct.image"></div>
+
+  <div class="product">
+    <div>Product ID: </div>
+    <div>{{productId}}</div>
+  </div>
+
+  <div class="product">
+    <div>Product name:</div>
+    <div><input [(ngModel)]="productName" /> </div>
+  </div>
+
+  <div class="product">
+    <div>Product price:</div>
+    <div><input type="number" [(ngModel)]="productPrice" /></div>
+  </div>
+
+  <div class="product">
+    <div>Image URL:</div>
+    <div><input [(ngModel)]="productImage" /></div>
+  </div>
+
+  <div class="product">
+
+    <div>Category:</div>
+    <select [(ngModel)]="categoryId">
+
+      <option *ngFor="let c of allCategories" [value]="c._id">{{c.categoryName}}</option>
+
+    </select>
+
+  </div>
+
+  <div class="product">
+
+    <div> <button type="button" (click)="SaveEdit()" class="btn btn-success">Save</button></div>
+    <div class="msg">{{msg}}</div>
+
+  </div>
+
+</div>

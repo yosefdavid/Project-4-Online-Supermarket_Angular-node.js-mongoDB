@@ -1,0 +1,27 @@
+<div class="row row-app-search-invoice">
+
+  <div class="col">
+
+    <div class="row">
+
+      <div class="col">
+        Search product: <input (keyup)="searchProduct()" [(ngModel)]="nameProduct" /><button class="btn-search"
+          (click)="searchProduct()"></button>
+      </div>
+
+    </div>
+
+
+    <div *ngIf="searchMode" class="row row-result">
+
+      <div class="col">
+
+        {{totalResult}} Products found
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

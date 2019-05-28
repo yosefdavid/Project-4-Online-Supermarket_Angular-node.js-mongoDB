@@ -1,0 +1,156 @@
+<div class="row row-app-register">
+
+  <div class="col">
+
+    <div class="row">
+
+      <div class="col">
+
+        <h2>Registration</h2>
+
+      </div>
+
+    </div>
+
+    <div *ngIf="onStepOne" class="row row-steps">
+
+      <div class="col">
+
+        <div class="row">
+
+          <div class="col">
+
+            ➥ Step 1
+
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col">
+
+            <table>
+
+              <tbody>
+
+                <tr>
+                  <td>ID:</td>
+                  <td><input [(ngModel)]="id" maxlength="9" /></td>
+                </tr>
+
+                <tr>
+                  <td>Email:</td>
+                  <td><input [(ngModel)]="email" /></td>
+                </tr>
+
+                <tr>
+                  <td>Password:</td>
+                  <td><input type="password" [(ngModel)]="password" maxlength="8" /></td>
+                </tr>
+
+                <tr>
+                  <td>Password Confirm:</td>
+                  <td><input type="password" [(ngModel)]="passwordConfirm" maxlength="8" /></td>
+                </tr>
+
+                <tr>
+                  <td colspan="2"><button class="btn btn-primary" (click)="sendStepOne()" >Next></button></td>
+                </tr>
+
+                <tr>
+                  <td class="msg" colspan="2">{{msg}}</td>
+                </tr>
+
+              </tbody>
+
+            </table>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div *ngIf="onStepTwo" class="row row-steps">
+
+      <div class="col">
+
+        <div class="row">
+
+          <div class="col">
+
+            ➥ Step 2
+
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col">
+
+            <table>
+
+              <tbody>
+
+                <tr>
+                  <td>City: </td>
+                  <td>
+                    <select [(ngModel)]="city">
+                      <option value="Jerusalem">Jerusalem</option>
+                      <option value="Tel-Aviv">Tel-Aviv</option>
+                      <option value="Haifa">Haifa</option>
+                      <option value="Netania">Netania</option>
+                      <option value="Beer-Sheva">Beer-Sheva</option>
+                      <option value="Ashdod">Ashdod</option>
+                      <option value="Tiberias">Tiberias</option>
+                      <option value="Eilat">Eilat</option>
+                      <option value="Afula">Afula</option>
+                      <option value="Rehovot">Rehovot</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Street:</td>
+                  <td><input [(ngModel)]="street" /></td>
+                </tr>
+
+                <tr>
+                  <td>First name:</td>
+                  <td><input [(ngModel)]="firstName" /></td>
+                </tr>
+
+                <tr>
+                  <td>Last Name:</td>
+                  <td><input [(ngModel)]="lastName" /></td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">
+                      <button class="btn btn-primary" (click)="backToStepOne()"><Back</button> <button class="btn btn-success" (click)="sendStepTow()">Send</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="msg" colspan="2">{{msg}}</td>
+                </tr>
+
+              </tbody>
+
+            </table>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

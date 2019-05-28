@@ -1,0 +1,50 @@
+<div class="card row row-app-cart">
+
+  <div class="col col-cart">
+
+    <div class="row">
+
+      <div class="col">
+
+        <button class="mini-bth btn btn-light" (click)="minimize()"></button>
+        <button class="empty-bth btn btn-light" (click)="emptyCart()"></button>
+
+      </div>
+
+    </div>
+
+    <hr>
+
+    <div class="row">
+
+      <div class="col">
+
+        <app-product-cart *ngFor="let p of allProductCart" [cartProduct]="p"></app-product-cart>
+
+        <div *ngIf="isCartEmpty">Your cart is empty</div>
+
+      </div>
+
+    </div>
+
+    <hr>
+
+    <div class="row">
+
+      <div class="col price">
+
+        Cart price: {{cartTotalPrice}}$
+
+      </div>
+
+      <div class="col">
+
+        <button (click)="goToOrder()" class="order-btn btn btn-danger" [disabled]="isCartEmpty">Order</button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

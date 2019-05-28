@@ -1,0 +1,674 @@
+body{
+    margin-top: 30px;
+
+        /* width */
+        ::-webkit-scrollbar {
+            width: 11px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey; 
+            border-radius: 10px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: rgb(172, 56, 56); 
+            border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #b30000; 
+        }
+
+    .container-fluid{
+
+        .app-logo-hello{
+
+            .logo{
+                width: 220px;
+            }
+
+            .clientName{
+                text-align: center;
+                margin: 20px;
+
+                .admin-msg{
+                    margin-top: 10px;
+                }
+
+                button{
+                    margin: 15px;
+                }
+            }
+
+        }
+
+        .app-login-and-registration{
+
+            margin-top: 50px;
+            text-align: center;
+
+            .row {
+                margin-top: 15px;
+            }
+
+            .row-app-login-registration{
+
+                img{
+                    width: 150px;
+                    border-radius: 15px;
+                }
+
+                a{
+                    text-decoration: none;
+                }
+
+                .msg{
+                    color: rgb(151, 10, 10);
+                    font-weight: bold;
+                }
+
+                .login-btn{
+                    margin: 15px;
+                } 
+                
+                .login-msg{
+                    margin: 15px;
+                }
+
+            }
+
+            .row-app-about-store{
+                max-height: 415px;
+                overflow: auto;
+
+                img{
+                    width: 150px;
+                }
+
+            }
+
+            .row-app-store-information{
+
+                img{
+                    width: 150px;
+                }
+
+                .notification{
+                    color: yellowgreen;
+                    font-weight: bold;
+                }
+
+                .cart-msg{
+                    margin-top: 10px;
+                }
+
+            }
+
+        }
+
+        .row-app-register{
+            text-align: center;
+
+            h2{
+                margin-top: 20px;
+            }
+
+           .row-steps{
+               display: inline-block;
+               margin: 30px;
+
+               select{
+                   height: 30px;
+               }
+
+             table{
+                margin: 20px;
+
+                button{
+                    margin: 20px;
+                }
+
+                 td {
+                    padding: 15px;
+                  }
+
+                  .msg{
+                      color: rgb(151, 10, 10);
+                      font-weight: bold;
+                  }
+            
+             }
+
+           }
+
+        }
+
+        .row-app-copyright{
+            margin-top: 50px;
+            margin-bottom: 30px;
+            text-align: center;
+
+            a{
+                text-decoration: none;
+            }
+        }
+
+        .row-app-user{
+            margin-top: 30px;
+            
+            .row-app-search{
+     
+                .btn-search{
+                    border: none;
+                    width: 30px;
+                    height: 30px;
+                    background-image: url("https://freeiconshop.com/wp-content/uploads/edd/search-flat.png");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-color: white;
+                    position: relative;
+                    top: 8px;
+                }
+    
+            }
+
+            .mini-cart{
+                margin-top: 30px;
+                margin-left: 10px;
+
+                .btn-full-mode{
+                    border: none;
+                    width: 40px;
+                    height: 40px;
+                    background-image: url("http://jumbosim.com/sim/css/img/cart.png");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    margin-right: 10px;
+                    background-color: white;
+                 }
+            }
+
+            .cart{
+                margin-right: auto;
+                text-align: center;
+                margin-left: auto;
+            }
+
+            .col-all-products{
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+
+            .row-app-cart{
+                margin-top: 30px;
+                margin-left: 10px;
+                max-height: 600px;
+                overflow: auto;
+
+                .col-cart{
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+
+                    .mini-bth{
+                        border: none;
+                        width: 40px;
+                        height: 40px;
+                        background-image: url("https://cdn0.iconfinder.com/data/icons/business-finance-vol-14-2/512/20-512.png");
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        margin-right: 10px;
+                        background-color: white;
+                    }
+
+                    .empty-bth{
+                        border: none;
+                        width: 40px;
+                        height: 40px;
+                        background-image: url("https://m.aapsworld.com/img/empty-cart-icon.png");
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        margin-right: 10px;
+                        background-color: white;
+                    }
+
+                    .price{
+                        margin-top: 5px;
+                    }
+
+                    .order-btn{
+                        font-weight: 600;
+                    }
+
+                }
+
+                .row-app-product-cart{
+
+                    .remove-product{
+                        border: none;
+                        width: 40px;
+                        height: 40px;
+                        background-image: url("https://t3.ftcdn.net/jpg/02/44/07/92/240_F_244079250_A2k049tJhPBwqlBWVZNxqasuMw95jtak.jpg");
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        margin-right: 10px;
+                    }
+
+                        .card-img{
+                            margin-top: 28px;
+                            width: 63%;
+                            max-height: 140px;
+                        }
+                    }
+                  
+                    img{
+                        margin-top: 28px;
+                    }
+
+                }
+
+            }
+
+            .row-app-all-products{
+                margin-top: 30px;
+                margin-left: 10px;
+                height: 600px;
+                overflow: auto;
+
+                .row-categories{
+                    margin-top: 10px;
+
+                    .spinner-border{
+                        margin-left: 15px;
+                        margin-bottom: 3px;
+                    }
+
+                }
+
+                #app-product-modal{
+                    text-align: center;
+                    margin-top: 180px;
+
+                    img{
+                        width: 25%;
+                        max-height: 86px;
+                    }
+                    
+                    .modal-dialog{
+                        width: 225px;
+                        margin-left: auto;
+                        margin-right: auto;
+
+                        .total-product{
+                            text-align: center;
+                            width: 70px;
+                        }
+
+                        .modal-div{
+                            margin-top: 10px;
+                        }
+
+                        .btn-add-modal{
+                            border: none;
+                            width: 40px;
+                            height: 40px;
+                            background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX31227219.jpg");
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            background-color: white;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                    }
+
+
+                }
+
+                .row-app-product{
+                    text-align: center;
+                    float: left;
+                    margin: 15px;
+                    padding: 10px;
+                    height: 262px;
+                    padding: 10px;
+
+                    .img{
+                        height: 140px;
+                    }
+
+                    img{
+                        max-width: 100%;
+                        max-height: 125px;
+                        margin-right: auto;
+                        margin-left: auto;
+                    }
+
+
+                    .product{
+                        margin-top: 10px;
+                    }
+
+                    .btn-add{
+                        border: none;
+                        width: 40px;
+                        height: 40px;
+                        background-image: url("https://png.pngtree.com/svg/20170901/34af96269c.svg");
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-color: white;
+                    }
+
+                }
+
+            }
+
+            .row-app-order{             
+                margin-top: 30px;
+
+                .row-app-search-invoice{
+
+                        .btn-search{
+                        border: none;
+                        width: 30px;
+                        height: 30px;
+                        background-image: url("https://freeiconshop.com/wp-content/uploads/edd/search-flat.png");
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-color: white;
+                        position: relative;
+                        top: 8px;
+                        }
+
+                        .row-result{
+                            margin-top: 10px;
+                        }
+
+                }
+
+                .cart-invoice{
+                    margin-right: auto;
+                    text-align: center;
+                    margin-left: auto;
+                }
+
+                .row-app-cart-invoice{
+                    margin-top: 30px;
+                    margin-left: 10px;
+                    max-height: 600px;
+                    overflow: auto;
+
+                    .col-app-cart-invoice{
+                        padding: 15px;
+
+                        .row-btn-back{
+                            margin-bottom: 17px;
+                        }
+
+                        .btn-info{
+                            font-weight: 600;
+                            margin-left: 20px;
+                        }
+                        
+                    }
+                   
+                    .row-app-product-invoice{
+
+                        .result{
+                            background-color: yellow;
+                        }
+
+                    }
+
+                    .row-price{
+                        margin-top: 10px;
+                    }
+
+                }
+
+                .col-order-form{
+                    margin-left: 15px;
+                    margin-right: 15px;
+                   
+                    .row-app-order-form{
+                        margin-top: 30px;
+                        margin-left: 10px;
+                        height: 600px;
+                        overflow: auto;
+                        
+
+                        .col-order{
+                            padding: 19px;
+
+                            td {
+                                padding: 15px;
+                              }
+
+                            .col-details{
+                                margin-left: 55px;
+
+                                .inp-date{
+                                    width: 178px;
+                                }
+                                
+                                .inp-credit{
+                                    margin-left: 20px;
+                                }
+
+                                .td-err-date{
+                                    text-align: center;
+                                    padding: 0px;
+                                    color: #b30000;
+                                    font-weight: bold;
+                                }
+
+                                .td-err-credit-card{
+                                    text-align: center;
+                                    padding: 0px;
+                                    color: #b30000;
+                                    font-weight: bold;
+                                }
+
+                                .msg{
+                                    margin-top: 10px;
+                                    color: #b30000;
+                                    font-weight: bold;
+                                }
+
+                                .btn-success{
+                                    font-weight: 600;
+                                }
+                            }
+
+                            .modal {
+                                display: none; /* Hidden by default */
+                                position: fixed; /* Stay in place */
+                                z-index: 1; /* Sit on top */
+                                padding-top: 100px; /* Location of the box */
+                                left: 0;
+                                top: 0;
+                                width: 100%; /* Full width */
+                                height: 100%; /* Full height */
+                                overflow: auto; /* Enable scroll if needed */
+                                background-color: rgb(0,0,0); /* Fallback color */
+                                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+                              }
+                              
+                              /* Modal Content */
+                              .modal-content {
+                                background-color: #fefefe;
+                                margin: auto;
+                                padding: 20px;
+                                border: 1px solid #888;
+                                max-width: 500px;
+                                text-align: center;
+                                padding: 30px;
+
+                                div{
+                                    margin-top: 20px;
+                                }
+
+                                img{
+                                    width: 125px;
+                                }
+
+                                .btn-link{
+                                    padding: 5px;
+                                    margin-bottom: 4px;
+                                }
+
+                              }
+                              
+                              /* The Close Button */
+                              .close {
+                                color: #aaaaaa;
+                                float: right;
+                                font-size: 28px;
+                                font-weight: bold;
+                              }
+                              
+                              .close:hover,
+                              .close:focus {
+                                color: #000;
+                                text-decoration: none;
+                                cursor: pointer;
+                              }
+
+                        }
+
+                    }
+
+                }
+
+             
+
+
+            }
+           
+        }
+
+        .row-app-admin{
+
+            .row-app-search{
+
+                .btn-search{
+                    border: none;
+                    width: 30px;
+                    height: 30px;
+                    background-image: url("https://freeiconshop.com/wp-content/uploads/edd/search-flat.png");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-color: white;
+                    position: relative;
+                    top: 8px;
+                }
+
+            }
+
+            .cart{
+                margin-right: auto;
+                text-align: center;
+                margin-left: auto;
+            }
+
+            .row-app-cart-admin{
+                margin-top: 30px;
+                margin-left: 10px;
+                max-height: 600px;
+                overflow: auto;
+                width: 300px;
+
+                .row-header-cart{
+                    margin-top: 20px;
+                }
+
+                .row-product-cart-admin{
+                    margin-bottom: 15px;
+                }
+
+                .row-app-product-cart-admin{
+                    text-align: center;
+                    padding: 20px;
+                    
+                    img{
+                        max-width: 100%;
+                        max-height: 125px;
+                         margin: 10px;
+                    }
+
+                    input{
+                        text-align: center;
+                    }
+
+                    .product{
+                        margin-top: 20px;
+                    }
+
+                    .msg{
+                        margin-top: 10px;
+                        color: #b30000;
+                        font-weight: 600;
+                    }
+
+                }
+
+            }
+
+            .col-all-products-admin{
+                margin-left: 15px;
+                margin-right: 15px;
+
+                .row-app-all-products-admin{
+                    margin-top: 30px;
+                    margin-left: 10px;
+                    height: 600px;
+                    overflow: auto;
+
+                    .row-categories{
+                        margin-top: 24px;
+
+                        .spinner-border{
+                            margin-left: 15px;
+                            margin-bottom: 3px;
+                        }
+
+                    }
+
+                    .row-app-product{
+
+                        text-align: center;
+                        float: left;
+                        margin: 15px;
+                        padding: 10px;
+                        height: 262px;
+                        padding: 10px;
+    
+                        .img{
+                            height: 140px;
+                        }
+    
+                        img{
+                            max-width: 100%;
+                            max-height: 125px;
+                            margin-right: auto;
+                            margin-left: auto;
+                        }
+    
+                        .product{
+                            margin-top: 10px;
+                        }
+
+                    }
+                    
+                }
+
+            }
+
+        }
+
+        
+
+    }
+

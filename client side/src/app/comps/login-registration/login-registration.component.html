@@ -1,0 +1,104 @@
+<div class="row row-app-login-registration">
+
+  <div class="col">
+
+    <div class="row">
+
+      <div class="col">
+
+        <img src="https://cdn-images-1.medium.com/max/1200/1*iAu65xDmvpVdBJgps6EDEw.png" />
+
+      </div>
+
+    </div>
+
+    <div *ngIf="isConect" class="row">
+
+      <div class="col">
+
+        <button class="login-btn btn btn-success" (click)="goToMarket()">{{btnText}}</button>
+
+        <div class="login-msg" *ngIf="isConect">Welcome!</div>
+
+        <div class="login-msg" *ngIf="isConect">Enjoy shopping!</div>
+
+      </div>
+
+    </div>
+
+    <div *ngIf="isDisconect" class="row">
+
+      <div class="col">
+
+        <h5>Registered?</h5>
+
+      </div>
+
+    </div>
+
+    <div *ngIf="isDisconect" class="row">
+
+      <div class="col-3">
+
+        <span>Email:</span> 
+
+      </div>
+
+      <div class="col">
+
+        <input [(ngModel)]="username" />
+
+      </div>
+
+    </div>
+
+    <div *ngIf="isDisconect" class="row">
+
+      <div class="col-3">
+
+       <span>Password:</span> 
+
+      </div>
+
+      <div class="col">
+
+        <input type="password" [(ngModel)]="password" maxlength="8" />
+
+      </div>
+
+    </div>
+
+    <div *ngIf="isDisconect" class="row">
+
+      <div class="col">
+
+        <button *ngIf="btnNotLoad" class="btn btn-primary" (click)="login()">Login</button>
+
+        <button *ngIf="!btnNotLoad" class="btn btn-primary" type="button">
+          <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+          Login
+        </button>
+
+      </div>
+
+    </div>
+
+    <div *ngIf="isDisconect" class="row">
+
+      <div class="col msg">{{msg}}</div>
+
+    </div>
+
+    <div *ngIf="isDisconect" class="row">
+
+      <div class="col">
+
+        <a [routerLink]="'/register'">Not yet registered? Click to register</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

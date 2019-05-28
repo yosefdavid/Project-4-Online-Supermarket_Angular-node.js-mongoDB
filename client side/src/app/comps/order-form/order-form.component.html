@@ -1,0 +1,175 @@
+<div class="row card row-app-order-form">
+
+  <div class="col col-order">
+
+    <form [formGroup]="orderForm" (ngSubmit)="sendOrderForm()">
+
+      <div class="row">
+
+        <div class="col">
+
+          <!-- Modal -->
+          <div id="orderModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+
+              <div><img src="https://cdn3.f-cdn.com/contestentries/862147/19868397/57f3dc4bdcf15_thumb900.jpg"></div>
+
+              <div>Your order has been successfully accepted!</div>
+
+              <div>Order ID: {{orderId}}</div>
+
+              <div>To download the receipt<button (click)="getInvoice()" class="btn btn-link">click here</button> </div>
+
+              <div><button (click)="goToLoginPage()" class="btn btn-primary">OK</button></div>
+
+            </div>
+
+          </div>
+          <!-- modal -->
+
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col">
+
+          Order
+
+        </div>
+
+      </div>
+
+      <hr>
+
+      <div class="row">
+
+        <div class="col col-details">
+
+          <div class="row">
+
+            <div class="col">
+
+              Shipping details:
+
+            </div>
+
+          </div>
+
+          <hr>
+
+          <div class="row">
+
+            <div class="col">
+
+              <table>
+
+                <tbody>
+
+                  <tr>
+                    <td>City:</td>
+                    <td>
+                      <select formControlName="city">
+                        <option value="Jerusalem">Jerusalem</option>
+                        <option value="Tel-Aviv">Tel-Aviv</option>
+                        <option value="Haifa">Haifa</option>
+                        <option value="Netania">Netania</option>
+                        <option value="Beer-Sheva">Beer-Sheva</option>
+                        <option value="Ashdod">Ashdod</option>
+                        <option value="Tiberias">Tiberias</option>
+                        <option value="Eilat">Eilat</option>
+                        <option value="Afula">Afula</option>
+                        <option value="Rehovot">Rehovot</option>
+                      </select>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>Street:</td>
+                    <td><input formControlName="street" /></td>
+                  </tr>
+
+                  <tr>
+                    <td>Shipping date:</td>
+                    <td><input (change)="checkDeliveryDate()" class="inp-date" [min]="dateToday" type="date"
+                        formControlName="deliveryDate" /></td>
+                  </tr>
+
+                  <tr>
+                    <td class="td-err-date" colspan="2">{{dateErrorMsg}}</td>
+                  </tr>
+
+                </tbody>
+
+              </table>
+
+            </div>
+
+          </div>
+
+          <hr>
+
+          <div class="row">
+
+            <div class="col">
+
+              Payments:
+
+            </div>
+
+          </div>
+
+          <hr>
+
+          <div class="row">
+
+            <div class="col">
+
+              <table>
+
+                <tbody>
+
+                  <tr>
+                    <td>Credit card:</td>
+                    <td><input maxlength="16" (keyup)="checkCreditCard()" pattern="^4[0-9]{12}(?:[0-9]{3})"
+                        class="inp-credit" formControlName="creditCard" />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="td-err-credit-card" colspan="2">{{creditCardErrordMsg}}</td>
+                  </tr>
+
+                </tbody>
+
+              </table>
+
+            </div>
+
+          </div>
+
+          <hr>
+
+          <div class="row">
+
+            <div class="col">
+
+              <div><input class="btn btn-success" type="submit" value="Order" /></div>
+              <div class="msg">{{msg}}</div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </form>
+
+  </div>
+
+</div>

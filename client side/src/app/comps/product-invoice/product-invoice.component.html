@@ -1,0 +1,14 @@
+<div class="card mb-2 row-app-product-invoice" style="max-width: 285px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img [src]="productInvoice.productImg" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 [id]="productInvoice.productCartId" class="card-title">{{productName}}</h5>
+        <p class="card-text">{{productInvoice.quantity}} {{UnitsOrKg}}</p>
+        <div class="card-text"><small class="text-muted">Total Price: {{fixPrice}}$</small></div>
+      </div>
+    </div>
+  </div>
+</div>

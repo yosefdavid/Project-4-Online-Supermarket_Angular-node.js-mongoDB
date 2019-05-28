@@ -1,0 +1,15 @@
+<div class="card row-app-product" style="width: 10rem;">
+
+  <div class="img"> <img [src]="product.image" alt="..."></div>
+
+  <div class="product">{{product.productName}}</div>
+
+  <div class="product">Price: {{fixPrice}}$</div>
+
+  <div class="product">
+
+    <button type="button" (click)="editProduct()" class="btn btn-info">Edit</button>
+       
+  </div>
+
+</div>

@@ -1,0 +1,40 @@
+<div class="card row row-app-all-products-admin">
+
+  <div class="col">
+
+    <div class="row row-categories">
+
+      <div class="col">
+
+        Categories:
+        <select (change)="getProducts()" [(ngModel)]="categoryToShow">
+
+          <option *ngIf="searchMode" value="result">{{productsToShow.length}} Result</option>
+
+          <option *ngFor="let c of allCategories" [value]="c._id">{{c.categoryName}}</option>
+
+        </select>
+
+        <div *ngIf="isLodaProduct" class="spinner-border spinner-border-sm" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <hr>
+
+    <div class="row">
+
+      <div class="col">
+
+        <app-product-admin *ngFor="let p of productsToShow" [product]="p" ></app-product-admin>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
